@@ -1,27 +1,27 @@
 # [MSI GS65 Stealth Thin 8RF][laptop]
 
-LAST UPDATED: **2019-01-23**
+LAST UPDATED: **2019-02-04**
 
 
 ## Configuration
 ### bootloader
 
-Clover-v2.4k-4859-X64
+Clover-v2.4k-4871-X64
 
 ### kexts
 
-[ACPIBatteryManager.kext][battery] (1.90.1)
-[AirportBrcmFixup][wifi] (1.1.9)
-[AppleALC][sound] (1.3.4 **+custom verbs**)
-[AtherosE2200Ethernet][ethernet] (2.2.2)
-[BrcmFirmwareRepo][bluetooth] (2.2.10)
-[BrcmPatchRAM2][bluetooth] (2.2.10)
-[BT4LEContiunityFixup][bt4le] (1.1.2)
-[FakeSMC][smc] (6.26-357-gceb835ea.1800)
-[Lilu][lilu] (1.3.1)
-USBxhci (1.0.0 **=custom map for MSI GS65**)
-[VoodooPS2Controller][ps2] (1.9.2 **+custom map**)
-[WhateverGreen][graphics] (1.2.6)
+[ACPIBatteryManager.kext][battery] (1.90.1)  
+[AirportBrcmFixup][wifi] (1.1.9)  
+[AppleALC][sound] (1.3.4 **+custom verbs**)  
+[AtherosE2200Ethernet][ethernet] (2.2.2)  
+[BrcmFirmwareRepo][bluetooth] (2.2.10)  
+[BrcmPatchRAM2][bluetooth] (2.2.10)  
+[BT4LEContiunityFixup][bt4le] (1.1.2)  
+[FakeSMC][smc] (6.26-357-gceb835ea.1800)  
+[Lilu][lilu] (1.3.1)  
+USBxhci (1.0.0 **=custom map for MSI GS65**)  
+[VoodooPS2Controller][ps2] (1.9.2 **+custom map**)  
+[WhateverGreen][graphics] (1.2.6)  
 
 ## Status
 
@@ -33,6 +33,9 @@ adapter: HFSPlus-64.efi (HFS+)
 #### problem: couldn't allocate runtime area
 ~~**fix:** AptioMemoryFix-64.efi (can't use for now as system doesn't shutdown/reboot)~~
 **fix:** OsxAptioFixDrv-64.efi
+
+#### problem: requested memory exceeds allocated relocation block
+**fix:** CsrActiveConfig **Allow Unrestricted NVRAM** (NVRAM Protections: disabled)
 
 #### problem: boot freeze
 **fix:** DSDT drop table **DMAR** if you need VT-d enabled
@@ -52,7 +55,7 @@ adapter: HFSPlus-64.efi (HFS+)
 #### problem: nvidia dgpu (currently not supported on OS X 10.14)
 **fix:** SSDT-DDGPU.aml
 
-#### problem: display brightness controls
+#### problem: display brightness
 **fix:** SSDT-PNLF.aml
 
 #### problem: sound
@@ -69,6 +72,9 @@ adapter: HFSPlus-64.efi (HFS+)
 
 #### problem: wifi
 **fix:** replace hardware BCM94352Z then fix wifi (AirportBrcmFixup.kext) and bluetooth (BrcmPatchRAM2.kext + BrcmFirmwareRepo.kext + BT4LEContiunityFixup.kext)
+
+#### problem: unable to activate apple services (Facetime, iMessage, etc)
+**fix:** use EmuVariableUefi-64.efi just once to activate
 
 ## Instructions
 
