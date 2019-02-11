@@ -1,24 +1,24 @@
 # [MSI GS65 Stealth Thin 8RF][laptop]
 
-LAST UPDATED: **2019-02-04**
+LAST UPDATED: **2019-02-11**
 
 
 ## Configuration
 ### bootloader
 
-Clover-v2.4k-4871-X64
+Clover-v2.4k-4875-X64
 
 ### kexts
 
 [ACPIBatteryManager.kext][battery] (1.90.1)  
 [AirportBrcmFixup][wifi] (1.1.9)  
-[AppleALC][sound] (1.3.4 **+custom verbs**)  
+[AppleALC][sound] (1.3.5 **+custom verbs**)  
 [AtherosE2200Ethernet][ethernet] (2.2.2)  
 [BrcmFirmwareRepo][bluetooth] (2.2.10)  
 [BrcmPatchRAM2][bluetooth] (2.2.10)  
 [BT4LEContiunityFixup][bt4le] (1.1.2)  
 [FakeSMC][smc] (6.26-357-gceb835ea.1800)  
-[Lilu][lilu] (1.3.1)  
+[Lilu][lilu] (1.3.3)  
 USBxhci (1.0.0 **=custom map for MSI GS65**)  
 [VoodooPS2Controller][ps2] (1.9.2 **+custom map**)  
 [WhateverGreen][graphics] (1.2.6)  
