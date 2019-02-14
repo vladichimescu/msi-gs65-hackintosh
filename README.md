@@ -1,12 +1,12 @@
 # [MSI GS65 Stealth Thin 8RF][laptop]
 
-LAST UPDATED: **2019-02-11**
+LAST UPDATED: **2019-02-14**
 
 
 ## Configuration
 ### bootloader
 
-Clover-v2.4k-4875-X64
+Clover-v2.4k-4877-X64
 
 ### kexts
 
@@ -83,7 +83,6 @@ adapter: HFSPlus-64.efi (HFS+)
 * optimus graphics (config.dgpu.plist - waiting for compatible nvidia drivers)
 
 ### help
-* kexts should be injected manually until install is completed or add **SystemParameters: InjectKexts: Detect** in config 
 * kexts should be installed to /Library/Extensions/
 * [disable power related options][disable-slow-sleep]:
  - sudo pmset -a disksleep 0

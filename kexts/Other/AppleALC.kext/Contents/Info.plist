@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>18D42</string>
+	<string>18D109</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -56,11 +56,11 @@
 					<key>CodecID</key>
 					<integer>283906592</integer>
 					<key>CodecName</key>
-					<string>MSI GS65 -  Realtek ALC1220</string>
+					<string>ALC1220 for MSI GS65 8Rx</string>
 					<key>ConfigData</key>
 					<data>
-					ASccAAEnHQABJx6mAScfmQGXHEABlx2QAZce
-					gQGXHwEBtxxQAbcdQAG3HhEBtx+ZAbcMAg==
+					ASccEAEnHQABJx6gAScfkAGXHCABlx0QAZce
+					gQGXHwEBtxwwAbcdAAG3HhABtx+QAbcMAg==
 					</data>
 					<key>FuncGroup</key>
 					<integer>1</integer>
