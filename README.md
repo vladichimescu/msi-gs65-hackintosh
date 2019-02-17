@@ -1,6 +1,6 @@
 # [MSI GS65 Stealth Thin 8RF][laptop]
 
-LAST UPDATED: **2019-02-14**
+LAST UPDATED: **2019-02-17**
 
 
 ## Configuration
@@ -15,7 +15,6 @@ Clover-v2.4k-4877-X64
 [AtherosE2200Ethernet][ethernet] (2.2.2)  
 [BrcmFirmwareRepo][bluetooth] (2.2.10)  
 [BrcmPatchRAM2][bluetooth] (2.2.10)  
-[BT4LEContiunityFixup][bt4le] (1.1.2)  
 [Lilu][lilu] (1.3.3)  
 [SMCBatteryManager.kext][smc] (1.0)  
 USBxhci (1.0.0 **=custom map for MSI GS65**)  
@@ -71,7 +70,7 @@ adapter: HFSPlus-64.efi (HFS+)
 **fix:** AtherosE2200Ethernet.kext
 
 #### problem: wifi
-**fix:** replace hardware BCM94352Z then fix wifi (AirportBrcmFixup.kext) and bluetooth (BrcmPatchRAM2.kext + BrcmFirmwareRepo.kext + BT4LEContiunityFixup.kext)
+**fix:** replace hardware BCM94352Z then fix wifi (AirportBrcmFixup.kext) and bluetooth (BrcmPatchRAM2.kext + BrcmFirmwareRepo.kext)
 
 #### problem: unable to activate apple services (Facetime, iMessage, etc)
 **fix:** use EmuVariableUefi-64.efi just once to activate
@@ -107,7 +106,6 @@ special thanks to all and every member of [clover bootloader team][clover], [Reh
 
 [bluetooth]: https://bitbucket.org/RehabMan/os-x-brcmpatchram/downloads/
 [brew]: https://brew.sh
-[bt4le]: https://github.com/acidanthera/BT4LEContiunityFixup/releases
 [clobber]: https://github.com/Dids/clover-builder/releases
 [clover]: https://www.insanelymac.com/forum/topic/304530-clover-change-explanations/
 [disable-slow-sleep]: https://www.tonymacx86.com/threads/slow-sleep-times.145939/#post-902481
