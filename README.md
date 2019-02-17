@@ -57,6 +57,9 @@ adapter: HFSPlus-64.efi (HFS+)
 #### problem: nvidia dgpu
 **fix:** nvidia web drivers not supported on OS X 10.14
 
+#### problem: external monitor usb-c not working
+**fix:** in clover GUI, drop table SSDT-DDGPU.aml
+
 #### problem: sound
 **fix:** AppleALC.kext + Lilu.kext
 
