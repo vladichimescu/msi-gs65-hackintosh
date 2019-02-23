@@ -1,12 +1,12 @@
 # [MSI GS65 Stealth Thin 8RF][laptop]
 
-LAST UPDATED: **2019-02-17**
+LAST UPDATED: **2019-02-23**
 
 
 ## Configuration
 ### bootloader
 
-Clover-v2.4k-4877-X64
+Clover-v2.4k-4884-X64
 
 ### kexts
 
@@ -15,7 +15,7 @@ Clover-v2.4k-4877-X64
 [AtherosE2200Ethernet][ethernet] (2.2.2)  
 [BrcmFirmwareRepo][bluetooth] (2.2.10)  
 [BrcmPatchRAM2][bluetooth] (2.2.10)  
-[Lilu][lilu] (1.3.3)  
+[Lilu][lilu] (1.3.4)  
 [SMCBatteryManager.kext][smc] (1.0)  
 USBxhci (1.0.0 **=custom map for MSI GS65**)  
 [VirtualSMC.kext][smc] (1.0.2)  
@@ -64,7 +64,7 @@ adapter: HFSPlus-64.efi (HFS+)
 **fix:** AppleALC.kext + Lilu.kext
 
 #### problem: battery
-**fix:** SMCBatteryManager.kext
+**fix:** SMCBatteryManager.kext + Lilu.kext
 
 #### problem: touchpad/keyboard
 **fix:** VoodooPS2Controller.kext
@@ -104,7 +104,7 @@ adapter: HFSPlus-64.efi (HFS+)
 - subsystem packages management: [brew]
 - [quick look plugins][qlplugins]
 
-kudos to all community developers who share their knowledge
+kudos to all community developers who share their knowledge  
 special thanks to all and every member of [clover bootloader team][clover], [Rehabman], [vit9696].
 
 [bluetooth]: https://bitbucket.org/RehabMan/os-x-brcmpatchram/downloads/
